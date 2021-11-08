@@ -1,0 +1,524 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);*/
+ 
+ 
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+ 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ 
+body {
+    line-height:16px;
+    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Lucida Grande', 'Open Sans', sans-serif;
+    color:#676767;
+    background-color:transparent!important;
+    font-size: 12px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
+    padding-bottom: 40px;
+    overflow-x:hidden;
+}
+ 
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+button, a{ outline: none!important; text-decoration: none!important;transition: all 0.3s ease 0s;}
+nav ul {
+    list-style:none;
+}
+ 
+blockquote, q {
+    quotes:none;
+}
+ 
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+ 
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ 
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+ 
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+ 
+del {
+    text-decoration: line-through;
+}
+ 
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+ 
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+ 
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #e1eec3;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+/* end */
+
+html, body {margin:0;padding:0;height:100%}
+body{ margin: 0; padding: 0  }
+
+/* Responsive Full Background Image Using CSS
+ * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
+*/
+body {
+  font-family: 'gothambook';
+  font-size: 13px;
+  /* Location of the image */
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+body.bg{ background-image: url(../images/01.jpg); }
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+body.bg { background-image: url(../images/01.jpg);}
+}
+
+
+.cstmbtn{font-size: 15px; font-family: 'gothambook'; color: #fff;
+border: 1px solid #ffffff;background: transparent; padding: 5px 20px; letter-spacing: 2px}
+.cstmbtn:hover{ background: #ffffff; color: #323232; }
+.img-responive{width: 100%; height: auto; }
+.default-btn { background: #323232;font-size: 16px; font-family: 'gothambook'; 
+color: #ffffff; border: 1px solid #000000; width: 100%; padding: 8px 0px; letter-spacing: 1px; }
+input[type="email"], input[type="text"]{
+  background-image:url(../images/loginpages/email_icon.png);
+  background-repeat: no-repeat;
+  background-position: 97% 8px!important;
+  padding-right: 27px!important;
+}
+input[type="password"]{ 
+  background-image:url(../images/loginpages/password_icon.png);
+  background-repeat: no-repeat;
+  background-position: 97% 8px; 
+  padding-right: 27px!important; 
+}
+
+.marginTop{ margin-top: 106px }
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{ background: transparent!important; }
+.dropdown-menu > li > a{ padding: 6px 25px!important; }
+i.fa-custom::before{content: ''; position: absolute; left: 0px; }
+
+li .btn.cart{ border: 1px solid #a9a9a9; border-radius: 0px; padding: 3px 6px; }
+
+.fa-icon-acc::before{ background: url(../images/loginpages/createacc_img.jpg) no-repeat;
+height: 40px; width: 247px; }
+.fa-icon-fb::before{ background: url(../images/loginpages/facebook_img.jpg) no-repeat;
+height: 40px; width: 247px; }
+.fa-icon-gm::before{ background: url(../images/loginpages/google_img.jpg) no-repeat;
+height: 40px; width: 247px; }
+
+.fa-icon-facebook::before{ content: ''; background: url(../images/homepage/facebook.png) no-repeat;
+height: 26px; width: 26px; position: absolute; }
+.fa-icon-twitter::before{ content: ''; background: url(../images/homepage/twitter.png) no-repeat;
+height: 26px; width: 26px; position: absolute;}
+.fa-icon-insta::before{ content: ''; background: url(../images/homepage/insta.png) no-repeat;
+height: 26px; width: 26px; position: absolute;}
+.fa-icon-youtube::before{ content: ''; background: url(../images/homepage/youtube.png) no-repeat;
+height: 26px; width: 26px;position: absolute; }
+.fa-icon-google::before{ content: ''; background: url(../images/homepage/google-plus.png) no-repeat;
+height: 26px; width: 26px; position: absolute;}
+
+
+
+.contentPost {position: absolute; max-width: 500px; left: 0; right: 0; margin-left: auto; 
+    margin-right: auto; top: 30%;}
+.loginWindow {position: absolute; max-width: 724px; left: 0; right: 0; margin-left: auto; 
+    margin-right: auto; top: 20%; background: #ffffff; padding: 40px; border-radius: 10px;}
+.loginWindow .logo img{ margin-left: auto;margin-right: auto;display: block; }
+.contact-form{ display: table;  width: 100%; margin-top: 40px;}
+.contact-form > div:first-child::after{ background: url(../images/loginpages/divid-line.jpg) no-repeat;
+ content: ''; position: absolute;  height: 159px;width: 21px;top: 41px;right: -30px;}
+.contact-form > div{ display: table-cell; width: 50%; position: relative;}
+/*.contact-form > div.rth-sec{ padding-right: 40px; }*/
+.contact-form > div.lft-sec{ padding-left: 64px; }
+.contact-form > div.lft-sec p{ font-size: 14px; }
+.contact-form > div p{ font-size: 16px; font-family: 'gothambook'; color: #2b2b2b; }
+.contact-form > div form input{ width: 100%; height: 34px; color: #f2f2f2; margin: 15px 0px 0px 0px; 
+border: 1px solid #8f8f8f; color: #8f8f8f; padding: 0px 5px; max-width:300px;}
+.contact-form .signin{ margin-top: 15px; max-width:300px;}
+.rth-sec .specs{ display: table; width: 100%; margin-top: 30px; }
+.rth-sec span{ display: table-cell; width: 50%; vertical-align: middle; }
+.rth-sec span input[type="checkbox"]{ vertical-align: sub; }
+.lft-sec > p{  font-size: 14px; font-family: 'gothambook'; color: #2b2b2b; text-align: right;  }
+.lft-sec > p a{ color: #ef5826; }
+.lft-sec a i::before{ left: 8px; }
+.lft-sec a{ width: 100%; position: relative; min-height: 40px; margin:6px 0px 7px 0px; }
+.register-form input{ display: inline-block; width: 50%; height: 34px; color: #8f8f8f; 
+  margin: 15px 0px 0px 0px; font-family: 'gothambook';font-size: 14px;
+border: 1px solid #8f8f8f;   max-width:300px; margin: 10px; padding: 5px;}
+.register-form p{ font-size: 20px; font-family: 'gothambook'; color: #2b2b2b; margin: 10px; font-weight: 500; }
+.register-form .btm-sec { display: table; width: 100% ; }
+.register-form .btm-sec span > input { width: 17px; height: auto; margin: 0px; }
+.register-form .btm-sec span a{ color: #ef5826 }
+.register-form .btm-sec span{ width: 50% ; display: table-cell; padding: 10px;
+    font-size: 14px; font-family: 'gothambook'; color: #2b2b2b;}
+.custom-navigation{ min-height: 96px; margin-bottom: 0px!important; background: url(../images/bg-01.png);
+position: fixed !important;z-index: 9;width: 100%;}
+.custom-navigation .navbar-brand{height: auto; padding: 0px; margin-top: 15px;}
+.custom-navigation ul.top-list{width: 100%; text-align: right; margin-top: 20px; }
+.custom-navigation ul.top-list li{ list-style: none; display:inline; padding: 0px 5px;}
+.custom-navigation ul.top-list li:nth-child(2){width: 4px;}
+.custom-navigation ul.top-list li:last-child{padding-left: 0px;}
+.custom-navigation ul.top-list li a{ font-size: 13px; font-family: 'gothambook';
+color: #404040; }
+.custom-navigation ul.top-list li a:hover{color: #e52333}
+
+
+.custom-navigation ul.btm-list{ display: table;width: 100%;text-align: right; 
+  margin:0px;}
+.custom-navigation ul.btm-list .dropdown-menu{ background-color: transparent; padding-top: 0px; border: none; left: 7px; box-shadow: none; width:200px;}
+.custom-navigation ul.btm-list .dropdown-menu li{ background: #ffffff; margin-bottom: 2px; }
+.custom-navigation ul.btm-list .dropdown-menu li:hover a{ color:#e52333;  }
+.custom-navigation ul.btm-list > li{ list-style: none; display: table-cell; padding: 20px 30px 8px 30px;}
+.custom-navigation ul.btm-list > li:last-child{ padding-right: 0px; }
+.custom-navigation ul.btm-list > li > a{ font-size: 16px; font-family: 'gothambook';
+color: #404040;}
+.custom-navigation ul.btm-list > li:hover > a{color: #e52333;border-bottom: 2px solid;
+padding-bottom: 10px; font-size: 16px;}
+.custom-navigation ul.btm-list > li.active a{ color: #e52333;border-bottom: 2px solid;
+padding-bottom: 10px; font-size: 16px;}
+
+
+#homeBanner .item img{ width: 100%; height: auto; }
+#homeBanner{ margin-top: 105px; }
+.carousel-control.left, .carousel-control.right{ background-image: none!important; }
+.carousel-control.left span,
+.carousel-control.right span{ border: 1px solid #ffffff; }
+
+.bannerHolisti{ background: url(../images/homepage/Home_about_BG.jpg) no-repeat;
+max-width: 1300px; min-height: 600px; background-position: 0px 100%; padding: 60px;}
+.bannerHolisti h4{  font-family: 'gothambold'; font-size: 35px;
+ color:#ef5826; text-align: center; font-weight: bold; 
+margin-bottom: 25px;}
+.bannerHolisti h4 span{ font-weight: 400; font-family: 'gothambook';}
+.bannerHolisti p{font-size: 14px; font-family: 'gothambook'; color: #2b2b2b;
+line-height: 22px; text-align: center; margin-top: 25px;}
+.bannerHolisti button{font-size: 15px; font-family: 'gothambook'; color: #323232;border: 1px solid #000000;
+padding: 12px 20px; text-align: center; background-color: #ffffff; 
+letter-spacing: 2px; margin-top: 60px}
+.bannerHolisti button:hover{ background: #323232; color: #ffffff }
+
+.bannerbtm{ position: relative; }
+.bannerbtm .banr-txt { position: absolute; right:0; left: 0; top: 30%; bottom: 0; }
+.bannerbtm .banr-txt h4{ font-family: 'gothambold'; font-size: 35px;
+ color:#ffffff; text-align: center; font-weight: bold; 
+margin-bottom: 25px;}
+.bannerbtm .banr-txt h4 span{ font-weight: 400; font-family: 'gothambook';}
+.bannerbtm .banr-txt button{font-size: 15px; font-family: 'gothambook'; color: #fff;
+border: 1px solid #ffffff;background: transparent; padding: 12px 20px; letter-spacing: 2px}
+
+.bannerbtm .banr-txt button:hover{background: #ffffff; color: #323232;  }
+
+footer{ background: #2a2a2a; min-height: 300px; padding: 40px 0px;}
+footer p{font-style: 16px;font-family: 'gothambook'; color: #ffffff }
+footer a{ font-family: 'gothambook'; font-size: 14px; color: #808080; }
+footer span{font-family: 'gothambook'; font-size: 14px; color: #808080; display: inline-block; margin-bottom: 15px;}
+footer ul li{ list-style: none; }
+footer ul li > a{font-family: 'gothambook'; font-size: 14px; color: #808080; line-height: 34px;
+}
+footer a:hover{ color: #ffffff; }
+footer .social-icon{ margin-top: 20px; display: inline-block; width: 100% }
+footer .social-icon li{ display: inline; position: relative;width: 30px;padding: 30px 50px 0px 0px;margin-top: 20px;}
+footer form input{ background-color: #ffffff!important; border: 1px solid #ffffff; 
+  height: 30px; font-family: 'gothambook'; font-size: 14px; color: #646464;
+ display: inline-block; width: 48%; margin-bottom: 5px;  padding-left: 10px}
+form textarea{ width: 97%; padding-left: 10px; }
+form button{ margin-top: 5px; }
+.footer { clear: both; position: relative; width: 100%; padding: 15px 0px; 
+  border-top: 1px solid #808080; display: inline-block; margin-top: 30px; }
+.footer a:hover{ color: #ffffff; }
+
+.breadcrum { margin: 40px 30px; }
+.breadcrum .breadcrumb { background-color:#ffffff!important; border-bottom: 1px solid #808080;
+border-radius: 0px!important; }
+.breadcrum .breadcrumb > li + li:before {padding: 0 5px;color: #ccc;content: "/\00a0";} 
+.breadcrum .breadcrumb > li a{ color: #2b2b2b; font-family: 'gothambook'; font-size: 13px; text-transform: uppercase;}
+.breadcrum .breadcrumb > li:last-child a{ color: #ef5826;}
+.breadcrum .breadcrumb > li:last-child{ color: #ef5826}
+.assembly{font-family: 'gothambook'; text-align: justify;}
+.assembly h4{ margin-bottom: 20px; color: #2b2b2b; text-align: left; 
+  font-size: 20px; font-weight: 700; font-family: 'gothambook'; }
+.assembly .img-responive{ margin-bottom: 15px; }
+.assembly p::first-child{margin-top: 10px; }
+.assembly p{ font-size: 14px;font-family: 'gothambook';color: #2b2b2b; }
+.assembly p span{ color: #e52333; }
+.plans{ font-size: 14px;font-family: 'gothambook'; font-weight: 600;  }
+.plans li{ margin: 15px; font-weight: 500;  }
+.plans li a{ color: #2b2b2b; font-weight: 600; }
+.plans li:hover a{ color: #e52333 }
+.other-resources ul li{background-color: #2a2a2a; list-style: none;
+ border: 1px solid #575757;}
+.other-resources ul li a{ color:#808080;padding: 8px; display: block; }
+.other-resources ul li:hover a{ color:#ffffff  }
+.other-resources h3{ background:#ef5826; color: #ffffff;font-size: 14px;
+  font-family: 'gothambook';padding: 8px; margin-bottom: 0px; }
+.red{ color:#e52333!important; margin-top: 30px; }
+.other-blogs ul li{background-color: #ffffff; list-style: none;
+padding: 0px; margin-bottom: 10px;} h2{}
+.other-blogs ul li h2{font-family: 'gothambook';font-size: 14px; color:#2a2a2a;}
+
+.btn-list{ display: inline; margin-top: 20px; }
+.btn-list a{ border: 1px solid #2a2a2a;font-family: 'gothambook';font-size: 14px;
+border-radius: 0px; color:#2a2a2a; padding: 6px 25px; margin-top: 25px;}
+.btn-list a.active{ background: #ef5826; color: #ffffff; 
+  border: 1px solid #ef5826; }
+.btn-list a:hover{ background: #ef5826; color: #ffffff; 
+  border: 1px solid #ef5826; }
+.blogpost ul{width: 100% }
+.blogpost ul li{ display: inline-block; width: 33%;padding:10px 10px 10px 0px; }
+.blogpost ul li+ li{ padding: 10px }
+.hw-it-works h4{ text-align: center; }
+.hw-it-works h4 span{ font-size: 34px; font-weight: 400;font-family: 'gothambook';
+color: #ef5826; text-align: center;}
+.hw-it-works > ul > li{ border-radius: 50px; width: 100px;
+ height: 100px; border: 1px solid #ef5826; list-style: none; text-align: center;
+margin: 0 auto; position:relative; margin-bottom: 30px;}
+.hw-it-works > ul > li a{ font-family:'gothambook';font-size: 16px; color:#2b2b2b;
+position: absolute;left: 0;right: 0; top: 40%;}
+
+.about-us .bannerHolisti{ padding-top: 0px; background: none; min-height: 0; }
+.about-us .para p{ text-align: justify; margin-bottom: 30px; font-family: 'gothambook';}
+.about-us .para p span{ color:#ef5826;}
+.about-us .row-full{ margin-bottom: 100px; }
+.contact-us p span{ color:#ef5826; }
+.contact-us p{ font-family: 'gothambook'; font-size: 14px; margin-bottom: 30px; }
+.contact-us p a{ color:#2b2b2b;}
+
+.contact-us h4{  font-family: 'gothambold'; font-size: 25px;
+ color:#ef5826; text-align: left; font-weight: bold; 
+margin-bottom: 25px;}
+.contact-us h4 span{ font-weight: 400; font-family: 'gothambook';}
+
+h4{  font-family: 'gothambold'; font-size: 35px;
+ color:#ef5826; text-align: center; font-weight: bold; 
+margin-bottom: 25px;}
+h4 span{ font-weight: 400; font-family: 'gothambook';}
+
+.contact-us{ margin: 0px 0px 90px 0px; }
+.contact-us input{ width: 267px; height: 30px; margin-bottom: 5px; }
+input, textarea{ border: 1px solid #4c4c4c; color: #646464;
+box-shadow: inset 0px 0px 4px 0px #ABABAB;
+-webkit-box-shadow: inset 0px 0px 4px 0px #ABABAB;
+-moz-box-shadow: inset 0px 0px 4px 0px #ABABAB;
+-o-box-shadow: inset 0px 0px 4px 0px #ABABAB; font-family: 'gothambook';
+padding: 5px;}
+
+.contact-us button{  border: 1px solid #4c4c4c; color: #4c4c4c; }
+.contact-us button:hover{ background: #4c4c4c; color: #ffffff;  }
+
+.contact-us select{ border: 1px solid #4c4c4c; color: #646464; width: 97%;
+box-shadow: inset 0px 0px 4px 0px #ABABAB;
+-webkit-box-shadow: inset 0px 0px 4px 0px #ABABAB;
+-moz-box-shadow: inset 0px 0px 4px 0px #ABABAB;
+-o-box-shadow: inset 0px 0px 4px 0px #ABABAB;
+ height: 30px;padding:5px 10px; margin-bottom: 4px;}
+
+.contact-us h2{ font-size: 15px; font-weight: 500; color: #646464; font-family: 'gothambook';}
+
+.back-btn{display: inline-block; margin: 20px 0px;color: #337ab7!important}
+.back-btn:hover{ text-decoration: underline; }
+.cart table td{font-family: 'gothambook';}
+.cart table thead tr th{ border-bottom: 1px solid #4c4c4c }
+.cart table tbody tr td.bottom{ border: none; }
+.cart table tbody tr td.title{ 
+  border-top: 1px solid #000; border-right: 1px solid #4c4c4c!important; text-align: center; }
+.cart table tbody tr td.total{ border-left: 1px solid #4c4c4c; 
+border-top: 1px solid #000; }
+.cart table tbody tr td{ border-top: 1px solid #4c4c4c;
+ border-right: 1px solid #4c4c4c;border-bottom: 1px solid #4c4c4c;border-left: 1px solid #4c4c4c; padding: 10px;  }
+ .cart table tbody tr td.total a{ color: #ffffff; cursor: pointer; }
+ .cart table tbody tr td a{ color: #337ab7; cursor: pointer; }
+.cart table tbody tr td b{ display: block; margin-bottom: 5px; }
+.cart table tbody tr td:nth-child(3){border-left:1px solid #ffffff;  }
+td.total.payment{ text-align: center; background: #323232; color: #ffffff;
+  font-family: 'gothambook'; }
+.cart table tbody tr td:nth-child(2){ }
+
+.redirect-note { text-align: center;font-size: 14px; font-family: 'gothambook';
+font-weight: 600; margin: 60px 0px 150px 0px}
+.thank-u { text-align: center; padding: 30px; }
+.thank-u h1{ font-family: 'gothambold'!important; font-size: 25px; color: #ef5826}
+.thank-u p{font-family: 'gothambook'; font-size: 16px; font-weight: bold;}
+.thank-u button{ border-radius: 0; border: 1px solid #000; background:#323232; color: #ffffff;font-family: 'gothambook'; font-size: 16px; 
+margin: 40px 0px 60px 0px; padding: 6px 60px;}
+.thank-u button:hover{ background: #ffffff; color: #323232;border: 1px solid #000; }
+.thank-u .p-note{ color:#ef5826; font-style: italic; font-size: 15px;}
+
+.tabbable .nav li{ width: 100%; display: block; background: #575757; border: 2px solid #6e6e6e; }
+.tabbable .nav li a{ border-radius: 0; padding: 6px 12px; border: none;}
+.tabbable .nav li:hover a{ background: #ef5826 }
+.tabbable .nav li.active a{ background: #ef5826!important; color: #ffffff }
+.tabbable .nav li a{ font-size: 14px;font-family: 'gothambook'; color:#ffffff  }
+/*.tabbable .nav*/
+
+.my-account{ margin-bottom: 60px; }
+.persnl-info h5{ font-size: 16px; font-weight: bold; font-family: 'gothambook';
+margin-bottom: 25px;}
+.persnl-info ul li{display: block; font-family: 'gothambook'; font-size: 14px; 
+margin:10px 0px;}
+.persnl-info ul li p{ display: inline-block; }
+.persnl-info ul li p span{ display: block; color: #323232 }
+.persnl-info ul li p span:first-child{  color: #323232 }
+.persnl-info ul li p span:last-child{  color: #ef5826; font-size: 14px; line-height: 2px;}
+.persnl-info ul li span:first-child{width:140px;display: inline-block; color: #ef5826;
+vertical-align: top;}
+.persnl-info .btn{ border-radius: 0px; border: 1px solid #323232; background: #ffffff;
+ font-family: 'gothambook'; font-size: 15px; margin: 30px 0px; padding: 8px 25px;}
+ .persnl-info .btn:hover{background: #323232; color:#ffffff;}
+.persnl-info form input{ border: 1px solid #dddddd; display: block; width: 300px;font-family: 'gothambook';
+ margin-bottom: 8px; height: 38px; padding: 0px 10px }
+.persnl-info form .btn{  border-radius: 0; border: 1px solid #000; background:#323232; color: #ffffff;font-family: 'gothambook'; font-size: 16px; 
+margin: 10px 0px 60px 0px; padding: 6px 60px;}
+.persnl-info form .btn:hover{background: #fff; color:#323232;}
+
+.persnl-info.cart table tbody tr td:nth-child(2){ border-right: 1px solid #4c4c4c;}
+.persnl-info.cart table tbody tr td:nth-child(3){ text-align: left; }
+.persnl-info.cart table tbody tr td{ vertical-align: middle; }
+
+.shipping-form input[type="email"], input[type="text"]{ background-image: none; }
+.shipping-form{ margin-bottom: 30px;border-bottom: 1px solid #ccc;padding-bottom: 30px; font-family: 'gothambook';}
+.checkout-sep{ font-size: 18px; font-family: 'gothambook'; font-weight: 600; display: inline-block;
+width: 100% }
+.checkout-sep #sameDelivery{ margin: 0px; }
+.checkout-sep label{font-size:12px; float:right; margin-top: -3px; font-weight: normal;}
+.inner-page-butt-blue{ color: #ffffff; background: transparent; border: none; }
+.inner-page-butt-blue:hover{ color: #ffffff; background: transparent; }
+
+.content-text p::first-child(){ font-size: 18px; font-family: 'gothambook'; }
+.content-text p{ font-size: 16px; font-family: 'gothambook'; }
+.forget-password p{ margin: 20px 0px; }
+.forget-password .btm-sec, .forget-password input{ width: 250px; margin: 5px auto }
+
+.no-mob{ display: block; }
+.no-desk{ display: none; }
+
+@media only screen and (max-width: 769px) {
+.custom-navigation ul.btm-list,
+.custom-navigation ul.top-list{ text-align: left; }
+.custom-navigation ul.btm-list li{ list-style: none; display:block; padding: 15px 20px;}
+}
+
+@media only screen and (max-width: 599px) {
+.checkout-sep label{float: left;margin-top: 15px;font-weight: normal;}
+.no-desk{ display: block; }
+.no-mob{ display: none; }
+#homeBanner{ margin-top: 0px; }
+.contact-form > div{ display: inline-block; width: 100%; position: relative;}
+.contact-form > div.lft-sec{ padding-left: 0px; }
+.rth-sec span{display: inline-block; width: 100%; margin-top: 10px;}
+.contact-form > div:first-child::after{ display: none; }
+.lft-sec > p{ text-align: left;margin-top: 15px; }
+.lft-sec a i::before{ left: 0; }
+.rth-sec .specs{ margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid #ccc; }
+.custom-navigation{ position: relative!important; }
+.bannerHolisti{ padding:10px 0px; }
+.bannerHolisti h4{ font-size: 26px; }
+.custom-navigation .navbar-brand{ margin-top: 0px; }
+.custom-navigation .navbar-brand{ padding: 5px; }
+.navbar-toggle{ margin-top: 30px!important; }
+.custom-navigation{ background: #ffffff; }
+.custom-navigation ul.top-list li{ display: inline-block; }
+/*.bannerbtm.row .img-responive{  width: auto; }*/
+.bannerbtm .banr-txt h4{ font-size: 30px; }
+footer .social-icon{ width: 100%; }
+footer form input{ width: 100% }
+form textarea{ width: 100%; }
+.custom-navigation ul.top-list {padding: 10px 10px 0px 10px;background: #f2f2f2;}
+.custom-navigation ul.top-list li {margin-bottom: 10px;}
+.custom-navigation ul.btm-list > li.active a{ padding-bottom: 2px; }
+.custom-navigation ul.btm-list li{ padding: 6px 20px; }
+.custom-navigation ul.top-list{ margin-top: -8px; }
+.marginTop{ margin-top: 0px; }
+.about-us .row-full{ margin-bottom: 30px; }
+.breadcrum {margin: 10px 30px;}
+.contact-us input, .contact-us select{ width: 100%; }
+.btn-list a{ padding: 6px 20px;} 
+.register-form input{ width: 100% }
+.loginWindow{ padding: 15px; }
+.register-form input{ margin: 10px 0px; }
+.persnl-info form input{ width: 100% }
+.persnl-info h5{ padding-top: 15px; clear: both }
+.persnl-info ul li span:first-child{ width: 100%; }
+.tabbable.tabs-left .col-sm-9{ clear: both;  }
+.persnl-info.cart{ max-width: 100%; overflow-y: scroll; }
+.persnl-info .btn{ margin: 15px 0px; }
+.row.cart{width: 100%;overflow-y: scroll;border: 2px solid #666;}
+
+}
+
+
+

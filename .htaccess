@@ -1,0 +1,23 @@
+RewriteEngine On
+
+
+
+DirectoryIndex index.php
+#RewriteCond %{HTTP_HOST} ^holistiquelearning.com[nc]
+#RewriteRule ^(.*)$ https://www.holistiquelearning.com/$1 [r=301,nc]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-l
+
+
+
+
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+
+
